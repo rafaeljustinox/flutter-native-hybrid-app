@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPocApp">
         <activity
+            android:name="io.flutter.embedding.android.FlutterActivity"
+            android:theme="@style/Theme.AndroidPocApp.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AndroidPocApp.NoActionBar">
