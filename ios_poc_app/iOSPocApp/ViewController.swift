@@ -9,6 +9,7 @@ class ViewController: UIViewController {
     let button = UIButton(type:UIButton.ButtonType.custom)
     button.addTarget(self, action: #selector(showFlutter), for: .touchUpInside)
     button.setTitle("Abrir Página Flutter", for: UIControl.State.normal)
+    button.center = self.view.center
     button.frame = CGRect(x: 80.0, y: 210.0, width: 160.0, height: 40.0)
     button.backgroundColor = UIColor.blue
     self.view.addSubview(button)
